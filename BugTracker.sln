@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "src\src.csproj", "{7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugTracker.Tests", "BugTracker.Tests\BugTracker.Tests.csproj", "{B5464F45-66A9-4DC9-B6B6-DDB021B70F77}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6E0AF940-7FD4-4084-BDB1-7CC889110557}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{33BD7E35-79A0-4782-8284-BFE5CDEE647B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugTracker.Domain", "src\Core\BugTracker.Domain\BugTracker.Domain.csproj", "{71D2F8BF-D9AE-4F76-A1ED-26E9DD4397F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +30,14 @@ Global
 		{B5464F45-66A9-4DC9-B6B6-DDB021B70F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5464F45-66A9-4DC9-B6B6-DDB021B70F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5464F45-66A9-4DC9-B6B6-DDB021B70F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D2F8BF-D9AE-4F76-A1ED-26E9DD4397F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D2F8BF-D9AE-4F76-A1ED-26E9DD4397F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D2F8BF-D9AE-4F76-A1ED-26E9DD4397F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D2F8BF-D9AE-4F76-A1ED-26E9DD4397F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79E78F70-CFC1-411D-B0BA-11A4F4432F2C} = {6E0AF940-7FD4-4084-BDB1-7CC889110557}
+		{33BD7E35-79A0-4782-8284-BFE5CDEE647B} = {6E0AF940-7FD4-4084-BDB1-7CC889110557}
+		{71D2F8BF-D9AE-4F76-A1ED-26E9DD4397F2} = {33BD7E35-79A0-4782-8284-BFE5CDEE647B}
 	EndGlobalSection
 EndGlobal
